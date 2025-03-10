@@ -2,6 +2,11 @@
 
 MP4DX is a mod of *Mario Party 4* that expands the game by changing its item roster to a whopping **36 items**. Does the Mini-Mega system get tiresome pretty quickly? Well, here's more items to play with to spice up the *MP4* experience!
 
+
+## Releases
+- Stable Releases: [win32](https://gamebanana.com/mods/download/546878)
+- Development Release: [win32](https://nightly.link/MarioPartyModding/MarioParty4-DX/workflows/gecko/main/MarioParty4-DX.zip)
+
 ### Key Features:
 
 - **Expanded Item Roster**: 36 items to choose from!

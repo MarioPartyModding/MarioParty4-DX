@@ -1,0 +1,24 @@
+name: gecko
+
+on: [push, pull_request]
+
+jobs:
+  Windows:
+    runs-on: windows-2022
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5.2.0
+        with:
+          python-version: 3.9
+
+      - name: Run Batch File
+        run: cmd.exe /c build.bat
+          
+      - name: Upload Gecko Code
+        uses: actions/upload-artifact@v4
+        with:
+          name: MarioParty4-DX
+          path: dist/
