@@ -1,0 +1,1 @@
+The CPU item preference tables were completely relocated on this mod. Now they sit at CheckMiniUse; function that has been removed entirely since it wasn't too helpful for the AI (any item usages with that function address now simply result on the item being always used). They're at offset 6E900 on the dol, added manually. 0x32 length each.

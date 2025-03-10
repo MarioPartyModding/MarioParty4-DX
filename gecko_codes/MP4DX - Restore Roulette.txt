@@ -1,0 +1,7 @@
+MP4DX - Restore Roulette [Wolf]:
+C20816CC 00000001
+9421FFE0 00000000
+C208186C 00000001
+880D8338 00000000
+
+Restores the vanilla roulette for Warp Pipe and Swap Card and adds it to Gaddbrush, if you liked the timeable spinner better than a random result.

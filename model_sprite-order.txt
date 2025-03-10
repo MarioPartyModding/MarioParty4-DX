@@ -1,0 +1,15 @@
+This is the order on which the extra models, sprites and text strings are on board.bin and board_e.dat. To add more custom items, you need to follow the order. The Gecko codes follow the order to load all the custom assets without having to modify much of the individual files.
+
+
+Board.bin: 2D Sprite is first, model is next.
+
+For example: file 0xA3 is the Bowser Phone 2D Sprite, and file 0xA4 is the model.
+
+
+Board.dat: Text without quotes first, then text between quotes, then description, then shop price. All strings are on group 0x37.
+
+For example:
+0037 0022: Bowser Phone
+0037 0023: "Bowser Phone"
+0037 0024: Call on Bowser or Koopa Kid to mess with your opponents.
+0037 0025: Bowser Phone         Coins x10

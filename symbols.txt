@@ -1,0 +1,31 @@
+80071A9C - MP4DX_CPUAlwaysUseItem
+80071AA0 - MP4DX_CPUItemPreferTbl
+80071C30 - MP4DX_ReverseJunctionArray
+80071C3B - MP4DX_PlunderChestTarget
+80071C40 - MP4DX_WarpBlockTargetSpace (halfword)
+80071C42 - MP4DX_ItemSpaceWeightStruct (0x2B entries)
+80071C66 - MP4DX_RareItemTurnsLeftRequired (Default: 10)
+80071C67 - MP4DX_HiddenBlockCard_Rarity
+80071C68 - MP4DX_BarterBox_Rarity
+80071C69 - MP4DX_SuperPipe_Rarity
+80071C6A - MP4DX_Chance_Rarity
+80071C6B - MP4DX_WackyWatch_Rarity (00 = Rare. 01 = Common)
+80071C6C - MP4DX_AllowedMultiItemsStruct (0x2B entries)
+80071CA0 - MP4DX_IsSpecialItemUsed (02 = Special Item in use. Not 02 = No special item in use)
+800721AC - MP4DX_OldHardcodedItemByte (Now unused) 
+8018FD62 - MP4DX_StatusEffectsStructP1
+8018FD6B - MP4DX_StatusEffectsStructP2
+8018FD74 - MP4DX_StatusEffectsStructP3
+8018FD7D - MP4DX_StatusEffectsStructP4
+
+
+status effect struct:
+0x00: Extra Dice
+0x01: Mini Pipe Access (activated when opening a mini pipe with a Skeleton Key, removed when walking a space)
+0x02: Plus
+0x03: Minus
+0x04: Speed
+0x05: Slow
+0x06: Poison
+0x07: Reverse
+0x08: Double Dip
