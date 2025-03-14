@@ -235,6 +235,7 @@ xcopy /E /I tools dist\tools
 xcopy /E /I extras dist\Extras
 xcopy /E /I gecko_codes "dist\Gecko Codes for Customization"
 xcopy /E /I src\files dist\store\files
+xcopy /E /I src\sys dist\store\sys
 copy src\patch.bat dist\
 copy LICENSE.md dist\
 
