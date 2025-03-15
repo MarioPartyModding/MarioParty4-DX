@@ -428,10 +428,9 @@ mtctr r3
   ori r3, r3, 0xFD02
   lbz r3, 0 (r3)
 bctrl
-lis r14, 0x8013
-ori r14, r14, 0x0642
-li r3, 0x10
-sth r3, 0 (r14) #Restore Bob-Omb portrait
+
+#After the player is done viewing the map, show the Skeleton Key prompt again
+b has_key
 
 end:
 
