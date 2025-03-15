@@ -42,7 +42,7 @@ lbz r15, 5 (r14)
 cmpwi r15, 1
 bne skip_slowdice
 
-li r0, 1 #The dice roll will be 1.
+mr r0, r15 #The dice roll will be the one the player chose.
 
 b end
 
