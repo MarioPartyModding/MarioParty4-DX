@@ -197,6 +197,9 @@ bctrl
 cmpwi r3, 0
 beq use_key
 
+cmpwi r3, 2
+beq use_map
+
 lis r14, 0x8007
 ori r14, r14, 0x0530 #Create messagebox
 mtctr r14
@@ -414,7 +417,21 @@ lis r14, 0x8013
 ori r14, r14, 0x0642
 li r3, 0x10
 sth r3, 0 (r14) #Restore Bob-Omb portrait
+b end
 
+use_map:
+lis r3, 0x8007
+ori r3, r3, 0x29A4 #BoardViewOverheadExec
+mtctr r3
+# Get current player ID
+  lis r3, 0x8018
+  ori r3, r3, 0xFD02
+  lbz r3, 0 (r3)
+bctrl
+lis r14, 0x8013
+ori r14, r14, 0x0642
+li r3, 0x10
+sth r3, 0 (r14) #Restore Bob-Omb portrait
 
 end:
 
