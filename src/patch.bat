@@ -88,7 +88,7 @@ for %%F in ("%~dp0*.iso") do (
     echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
     echo Patching in Gecko Codes!
     echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-    "tools/GeckoLoader" --hooktype=GX "tmp/root/sys/main.dol" "store/codes.txt" --dest "tmp/root/sys/main.dol"
+    "tools/GeckoLoader" --hooktype=GX --optimize "tmp/root/sys/main.dol" "store/codes.txt" --dest "tmp/root/sys/main.dol"
 
     cls
     echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
